@@ -18,13 +18,13 @@ public class HomeController {
     @GetMapping("/aws/v2")
     public String home(@RequestParam(defaultValue = "1") Integer num) {
         if (num == 1) {
-            log.info("{"+ activeProfile +"] /aws/v2 호출. info 로그 ########################");
+            log.info("[" + activeProfile + "] /aws/v2 호출. info 로그 ########################");
         } else if (num == -1) {
-            log.error("{"+ activeProfile +"] /aws/v2 호출. info 로그 ########################");
+            log.error("[" + activeProfile + "] /aws/v2 호출. info 로그 ########################");
         } else if (num == 0) {
-            log.warn("{"+ activeProfile +"] /aws/v2 호출. info 로그 ########################");
+            log.warn("[" + activeProfile + "] /aws/v2 호출. info 로그 ########################");
         }
 
-        return "<h1>AWS 배포 v1.1</h1>";
+        return "<h1>AWS 배포 v2.0</h1>";
     }
 }
